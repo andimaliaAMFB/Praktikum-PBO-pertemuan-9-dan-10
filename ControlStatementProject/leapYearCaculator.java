@@ -89,7 +89,7 @@ public class leapYearCaculator {
 	}
 	
 	static boolean leapYear() {
-		return ((Year % 4 == 0) && (Year % 100 != 0))? true:false;
+		return ((Year % 4 == 0) && ((Year % 100 != 0)||(Year % 400 == 0)))? true:false;
 	}
 
 }
